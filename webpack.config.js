@@ -3,14 +3,23 @@ const path = require('path');
 
 module.exports = {
   mode: "development",
-  devtool: "inline-source-map",
+  devtool: "eval-source-map",
+  devServer: {
+    // contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    // compress: true,
+    port: 8090, // 你可以选择任何未被占用的端口
+    // open: true, // 这将在服务器启动时自动打开浏览器
+  },
   entry: {
-    main: "./src/App.ts",
+    app: "./src/App.ts",
     game: "./src/module/game/Game.ts",
     loader: "./src/module/load/Loader.ts",
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
   },
 //   output: {
 //     path: path.resolve(__dirname, './dist'),

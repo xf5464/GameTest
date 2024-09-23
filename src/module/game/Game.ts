@@ -4,9 +4,9 @@ export class Game
 {
     constructor()
     {
-        console.log("----------------------Game start----------------------");
+        console.log("----------------------Game 11start----------------------");
         const logic = new SomeLogic()
     }
 }
 
-const game = new Game();
+// const game = new Game();

@@ -11,7 +11,7 @@ module.exports = {
     main: "./src/App.ts",
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
   },
 //   output: {
 //     path: path.resolve(__dirname, './dist'),

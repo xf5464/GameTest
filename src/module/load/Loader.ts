@@ -6,4 +6,7 @@ export default class Loader
     }
 }
 
-const loader = new Loader();
+export function  getLoader()
+{
+    const loader = new Loader();
+}
